@@ -110,24 +110,16 @@
 // }
 // google.maps.event.addDomListener(window, "load", init);
 
-var google;
-
 function init() {
-  // Set the coordinates for Surat, Gujarat
+  // Coordinates for Surat, Gujarat
   var myLatlng = new google.maps.LatLng(21.1702, 72.8311);
 
   var mapOptions = {
-    // Zoom level, higher number is closer
-    zoom: 12,
-
-    // Center the map at Surat, Gujarat
-    center: myLatlng,
-
-    // Disable scroll wheel zoom
-    scrollwheel: false,
-
-    // Customize map styles
+    zoom: 12, // Zoom level, higher number is closer
+    center: myLatlng, // Center the map at Surat, Gujarat
+    scrollwheel: false, // Disable scroll wheel zoom
     styles: [
+      // Map styles (optional)
       {
         featureType: "administrative.land_parcel",
         elementType: "all",
@@ -197,12 +189,12 @@ function init() {
   // Create the Google Map using our element and options defined above
   var map = new google.maps.Map(mapElement, mapOptions);
 
-  // Example of adding a marker
+  // Example of adding a marker (optional)
   var marker = new google.maps.Marker({
     position: myLatlng,
     map: map,
     title: "Surat, Gujarat",
-    icon: "images/loc.png", // Custom marker icon
+    icon: "images/loc.png", // Custom marker icon (replace with your actual path)
   });
 }
 
