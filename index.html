@@ -633,27 +633,31 @@
 			</div>
 			<div class="choose animate-box">
 				<h2>Contact</h2>
-				<form action="#">
+				<form action="https://api.web3forms.com/submit" method="POST">
+					<input type="hidden" name="access_key" value="f6a48886-aa27-452b-8ee1-bd2d2f4324b1">
 					<div class="row form-group">
 						<div class="col-md-6">
-							<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+							<input type="text" id="fname" name="firstname" class="form-control"
+								placeholder="Your firstname">
 						</div>
 					</div>
 					<div class="row form-group">
 						<div class="col-md-6">
-							<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+							<input type="text" id="lname" name="lastname" class="form-control"
+								placeholder="Your lastname">
 						</div>
 					</div>
 
 					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="text" id="email" class="form-control" placeholder="Your email address">
+							<input type="text" id="email" name="email" class="form-control"
+								placeholder="Your email address">
 						</div>
 					</div>
 
 					<div class="row form-group">
 						<div class="col-md-12">
-							<input type="text" id="subject" class="form-control"
+							<input type="text" id="subject" class="form-control" name="subject"
 								placeholder="Your subject of this message">
 						</div>
 					</div>
@@ -666,11 +670,13 @@
 					</div>
 					<div class="form-group">
 						<input type="submit" value="Send Message" class="btn btn-primary">
+						<input type="reset" value="Reset" class="btn btn-primary">
 					</div>
 
 				</form>
 			</div>
 		</div>
+
 		<iframe style="margin-top: 3%;" class="col-md-12"
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238133.18800756568!2d72.65748445425247!3d21.159120355995483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e59411d1563%3A0xfe4558290938b042!2sSurat%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1719229656225!5m2!1sen!2sin"
 			width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
