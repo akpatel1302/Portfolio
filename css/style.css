@@ -1379,7 +1379,7 @@ html::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
-.cursor {
+/* .cursor {
   position: fixed;
   width: 50px;
   height: 50px;
@@ -1405,4 +1405,26 @@ html::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
   transition: 0.15s;
   z-index: 1;
+} */
+
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  mix-blend-mode: difference;
+  top: 0;
+  left: 0;
+  z-index: 9999999999999999;
 }
